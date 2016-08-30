@@ -1,16 +1,18 @@
 <!doctype html>
-<html>
+<html ng-app='app'>
 <head>
     <meta charset="utf-8">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Angular Application</title>
-</head>
-<body>
-
     <script src="js/angular.js"></script>
     <script src="js/app/app.js"></script>
     <script src="js/app/controllers/MainController.js"></script>
-
+    <title>Angular Application</title>
+</head>
+<body>
+  <div class="container" ng-controller='MainController'>
+    <h1> {{ctrl.wizard.name}}</h1>
+    {{ 3 + 4 }}
+  </div>
 </body>
 </html>
